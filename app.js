@@ -14,6 +14,7 @@ const router  = require('koa-router')();
 
 router.get('/:category/:title', function (ctx, next) {
     console.log(ctx.params);
+    ctx.body = JSON.stringify(ctx.params)
 });
 
 router.get('/shaoyun', function (ctx, next) {
